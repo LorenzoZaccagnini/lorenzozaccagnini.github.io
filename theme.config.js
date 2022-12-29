@@ -3,7 +3,7 @@ const YEAR = new Date().getFullYear()
 export default {
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
-      <time>{YEAR}</time> © Your Name.
+      <time>{YEAR}</time> © Lorenzo Zaccagnini.
       <a href="/feed.xml">RSS</a>
       <style jsx>{`
         a {
@@ -17,5 +17,20 @@ export default {
         }
       `}</style>
     </small>
+  ),
+  navs: [
+    {
+      url: 'https://github.com/shuding/nextra',
+      name: 'Home'
+
+    },
+
+  ],
+  postFooter: (
+    <div style={{ display: 'block', marginTop: '8rem' }}>
+      ciao
+    </div>
   )
+
+
 }

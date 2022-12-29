@@ -63,3 +63,16 @@ img.next-image {
 .nav-line .nav-link {
   color: #69778c;
 }
+
+.dark {
+  --shiki-color-text: #d1d1d1;
+  --shiki-token-constant: #79b8ff;
+  --shiki-token-string: #ffab70;
+  --shiki-token-comment: #6b737c;
+  --shiki-token-keyword: #f97583;
+  --shiki-token-parameter: #ff9800;
+  --shiki-token-function: #b392f0;
+  --shiki-token-string-expression: #4bb74a;
+  --shiki-token-punctuation: #bbbbbb;
+  --shiki-token-link: #ffab70;
+}
