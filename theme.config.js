@@ -17,19 +17,6 @@ export default {
         }
       `}</style>
     </small>
-  ),
-  navs: [
-    {
-      url: 'https://github.com/shuding/nextra',
-      name: 'Home'
-
-    },
-
-  ],
-  postFooter: (
-    <div style={{ display: 'block', marginTop: '8rem' }}>
-      ciao
-    </div>
   )
 
 

@@ -3,7 +3,6 @@ title: Develop an Ethereum bridge with Rust
 date: 2022/11/14
 description: Develop a bridge between two EVM-compatible blockchains with Rust.
 tags: blockchain oracle bridge rust alchemy infura web3
-image: '/images/post_pics/rust_evm_bridge.jpg'
 author: Lorenzo Zaccagnini
 ---
 

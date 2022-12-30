@@ -3,7 +3,6 @@ title: Develop an Ethereum oracle with Rust
 description: A blockchain oracle is a service that allows smart contracts to interact with external data sources. In this post, we will develop a simple oracle that will track every time a Ethereum Name Service NFT is transferred. We will use Rust and the web3 crate to interact with the Ethereum blockchain.
 date: 2022/10/22
 tags: blockchain oracle rust alchemy infura web3
-image: '/images/post_pics/oraclecover.jpg'
 author: Lorenzo Zaccagnini
 ---
 

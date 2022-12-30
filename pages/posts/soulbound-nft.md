@@ -3,7 +3,6 @@ title: Develop a Soulbound NFT using Foundry and Slither
 date: 2022/08/16
 description: Today we will develop a Soulbound NFT, an NFT that can be only minted and not traded or transferred, it is bounded to the first owner. We'll do it using foundry with hardhat integrated. The Github workflow will test (foundry solidity and hardhat typescript) the contracts and uses Slither to statically analyze the code, trying to find the most common vulnerabilities.
 tags: blockchain nft slither cybersecurity foundry hardhat
-image: '/images/post_pics/soulbound-nft-cover.jpg'
 author: Lorenzo Zaccagnini
 ---
 
