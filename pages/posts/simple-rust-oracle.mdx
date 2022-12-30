@@ -8,6 +8,15 @@ author: Lorenzo Zaccagnini
 
 import Image from 'next/image'
 
+<Image
+  src="/images/covers/oracle.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
+
 A blockchain oracle is a service that allows smart contracts to interact with external data sources. In this post, we will develop a simple oracle that will track every time a [Ethereum Name Service NFT](https://etherscan.io/address/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85) is transferred. We will use Rust and the web3 crate to interact with the Ethereum blockchain.
 
 Stay with me until the end to learn how to listen to events on the Ethereum blockchain, you will learn how events work and how to use them in your smart contracts and oracles. Interoperability is a key feature of the Ethereum blockchain, and oracles are a key component of this interoperability.

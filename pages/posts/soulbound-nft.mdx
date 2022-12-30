@@ -8,6 +8,15 @@ author: Lorenzo Zaccagnini
 
 import Image from 'next/image'
 
+<Image
+  src="/images/covers/soulbound-nft-cover.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
+
 Today we will develop a Soulbound NFT, an NFT that can be only minted and not traded or transferred, it is bounded to the first owner. We'll do it using foundry with hardhat integrated. The Github workflow will test **(foundry solidity and hardhat typescript)** the contracts and [uses Slither to statically analyze the code](https://github.com/crytic/slither), trying to find the most common vulnerabilities.
 
 You can find all the code used in my repository [here](https://github.com/LorenzoZaccagnini/Soulbound-NFT-foundry-slither)
