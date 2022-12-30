@@ -67,6 +67,13 @@ img.next-image {
 a {
   word-break: break-all;
 }
+
+/* link that should not word-break */
+.nx-items-center a,
+h3 a {
+  word-break: normal;
+}
+
 .dark {
   --shiki-color-text: #d1d1d1;
   --shiki-token-constant: #79b8ff;
