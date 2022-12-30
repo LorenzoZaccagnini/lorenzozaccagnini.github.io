@@ -6,6 +6,8 @@ tags: blockchain nft slither cybersecurity foundry hardhat
 author: Lorenzo Zaccagnini
 ---
 
+import Image from 'next/image'
+
 Today we will develop a Soulbound NFT, an NFT that can be only minted and not traded or transferred, it is bounded to the first owner. We'll do it using foundry with hardhat integrated. The Github workflow will test **(foundry solidity and hardhat typescript)** the contracts and [uses Slither to statically analyze the code](https://github.com/crytic/slither), trying to find the most common vulnerabilities.
 
 You can find all the code used in my repository [here](https://github.com/LorenzoZaccagnini/Soulbound-NFT-foundry-slither)
@@ -460,7 +462,15 @@ jobs:
 ```
 
 This will install Foundry and run the Forge build and tests.
-![](/images/post_pics/foundry_tests.jpg)
+
+<Image
+  src="/images/soulbound/foundry_tests.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
 
 ### 6.2 Optional Hardat tests
 
@@ -482,7 +492,15 @@ If you want to use hardhat add a step that uses `yarn` to instal the packages an
 ```
 
 Should look like this:
-![](/images/post_pics/hardhat_tests.jpg)
+
+<Image
+  src="/images/soulbound/hardhat_tests.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
 
 ### 6.3 Add slither audit
 
@@ -505,7 +523,15 @@ We can even add slither manually, but I prefer to use `slither-action` command. 
 ```
 
 If everything is correct you will this result in the Security tab of the Github project:
-![](/images/post_pics/slither_results.jpg)
+
+<Image
+  src="/images/soulbound/slither_results.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
 
 ### 6.4 Recap
 

@@ -6,6 +6,8 @@ tags: blockchain oracle rust alchemy infura web3
 author: Lorenzo Zaccagnini
 ---
 
+import Image from 'next/image'
+
 A blockchain oracle is a service that allows smart contracts to interact with external data sources. In this post, we will develop a simple oracle that will track every time a [Ethereum Name Service NFT](https://etherscan.io/address/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85) is transferred. We will use Rust and the web3 crate to interact with the Ethereum blockchain.
 
 Stay with me until the end to learn how to listen to events on the Ethereum blockchain, you will learn how events work and how to use them in your smart contracts and oracles. Interoperability is a key feature of the Ethereum blockchain, and oracles are a key component of this interoperability.
@@ -136,7 +138,14 @@ Signature or topic0 = 0x + keccak256("Transfer(address,address,uint256)"))
 
 As you can see here on [Etherscan](https://etherscan.io/address/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85#events) the event signature is 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef.
 
-![](/images/post_pics/simple_rust_oracle/eventetherscan.jpg)
+<Image
+  src="/images/simple_rust_oracle/eventetherscan.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
 
 Let's code it!
 
@@ -216,7 +225,14 @@ I've used **future::ready** to run the code asynchronously. I've also used the *
 
 **The result should be this:**
 
-![](/images/post_pics/simple_rust_oracle/transferlog.jpg)
+<Image
+  src="/images/simple_rust_oracle/transferlog.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
 
 ### 4.5. Decode the event data
 
@@ -267,7 +283,14 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 **The result should be this:**
 
-![](/images/post_pics/simple_rust_oracle/transferid.jpg)
+<Image
+  src="/images/simple_rust_oracle/transferid.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
 
 ## 5. Do you need to develop an oracle or a bridge?
 
