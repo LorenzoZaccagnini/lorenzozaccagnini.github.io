@@ -2,6 +2,7 @@ const { promises: fs } = require('fs')
 const path = require('path')
 const RSS = require('rss')
 const matter = require('gray-matter')
+const { log } = require('console')
 
 async function generate() {
   const feed = new RSS({
@@ -20,7 +21,6 @@ async function generate() {
         path.join(__dirname, '..', 'pages', 'posts', name)
       )
       const frontmatter = matter(content)
-
       feed.item({
         title: frontmatter.data.title,
         url: '/posts/' + name.replace(/\.mdx?/, ''),
